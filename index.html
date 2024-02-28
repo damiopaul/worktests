@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button class="open-zammad-chat">Chat with us</button>
+    
+    <script src="https://www.zammad.ttndev.com/assets/chat/chat.min.js"></script>
+    <script>
+        $(function () {
+            new ZammadChat({
+                background: '#7312db',
+                fontSize: '12px',
+                chatId: 1,
+                show: false
+            });
+        });
+    </script>
+</body>
+</html>
